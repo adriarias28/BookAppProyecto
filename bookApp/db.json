@@ -1,5 +1,21 @@
 {
-    "usuarios":[
-        
-    ]
+  "usuarios": [
+    {
+      "id": "2c6d",
+      "nombre": "Adriana ",
+      "apellidos": "Arias Jimenez",
+      "usuario": "adriarias1",
+      "correo": "adriana.arias28@hotmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "a853",
+      "nombre": "Jeannette",
+      "apellidos": "Jiménez",
+      "usuario": "jeaneji",
+      "correo": "jeannette@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "librosDispo": []
 }
