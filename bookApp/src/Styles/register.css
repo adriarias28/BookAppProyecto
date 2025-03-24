@@ -15,6 +15,10 @@
     gap: 5px;
 }
 
+.parra{
+  width: 600px;
+}
+
 .imglogin{
     margin-left: 80px;
     width: 500px;
@@ -32,3 +36,29 @@
     outline: none;
     color: rgb(41, 51, 112);
   }
+
+.btnvalidar {
+    --bg: #153253;
+    --hover-bg: #9290ff9f;
+    --hover-text: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+  }
+  
+  .btnvalidar:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+  
+  .btnvalidar:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+  

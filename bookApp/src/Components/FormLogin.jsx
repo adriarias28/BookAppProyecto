@@ -40,7 +40,9 @@ function FormLogin() {
 
     function valInicio() {
       
-      const encontrar = personas.filter(persona => persona.usuario===nomUsuario && persona.password===passUsuario)
+      const encontrar = personas.filter(persona => persona.usuario === nomUsuario && persona.password===passUsuario)
+      console.log(encontrar);
+      
 
       if (encontrar.length === 0 || nomUsuario === "" || passUsuario === "" ) {
           Swal.fire({
@@ -52,6 +54,8 @@ function FormLogin() {
             }, 
           });
       }else{ 
+        
+          localStorage.setItem("infoUsuario", JSON.stringify(encontrar)) //stringify para convertido en formato lista
           navigate('/pagusuarios')
 
           Swal.fire("Bienvenido!");
@@ -64,13 +68,13 @@ function FormLogin() {
             <div>
               <img className='imglogin' src={imaglogin} alt="..." />
             </div>
-            <div>
+            <div className='contInfo'>
               <h1>¡Bienvenido a BookApp!</h1>
-              <p>Ingresa a tu cuenta y disfruta de los beneficios y de la mejor pagina de intercambio de libros.</p>
+              <p className='parra'>Ingresa a tu cuenta y disfruta de los beneficios y de la mejor pagina de intercambio de libros.</p>
               <h3>Iniciar sesión</h3>
               <input className='inpuesti' value={nomUsuario} onChange={usuario} placeholder='Nombre de usuario ' type="text" /><br /><br />
               <input className='inpuesti' value={passUsuario} onChange={password} placeholder='Contraseña' type="password" /><br /><br />
-              <button onClick={valInicio} >Iniciar Sesión</button><br />
+              <button className='btnvalidar' onClick={valInicio} >Iniciar Sesión</button><br />
               <p>¿No tienes una cuenta? <Link to= "/register">¡Registrate aquí!</Link></p>
             </div>
         </div>

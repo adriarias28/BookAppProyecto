@@ -2,6 +2,8 @@ import React from 'react'
 import "../Styles/navbar.css"
 import logo from '../imagenes/logo.png'
 import { Link, useNavigate } from 'react-router-dom'
+import tituloUno from '../imagenes/titulo1.png'
+
 
 function FormNav() {
 
@@ -13,13 +15,24 @@ function FormNav() {
 
     }
 
+    function btnRegis() {
+        
+        navigate('/register')
+
+    }
 
   return (
     <div>
+        <button className='btnInicio' onClick={btnInicio}>Iniciar Sesión</button> 
+        <button className='btnRegis' onClick={btnRegis}>Registrarse</button>
+
         <div className='titulos'>
-            <h1>Book App</h1>
-            <h3>Pagina web de intercambio de libros</h3>
+            <div>
+                <img className='tituloUno' src={tituloUno} alt="..." />
+            </div>
+            <p className='parrafoUno'>Pagina web de intercambio de libros</p><br />
         </div>   
+
         <nav className='navbar'>
                 <div>
                 <img className='imglogo' src={logo} alt="..." />
@@ -37,7 +50,6 @@ function FormNav() {
                 <li> <Link to= "/acercade">Acerca de</Link></li>
                 </div>
                 <div>
-                <li><button className='btn' onClick={btnInicio}>Inicio de sesión</button></li>
                 </div>
 
         </nav> 

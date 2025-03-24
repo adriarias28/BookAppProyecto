@@ -77,14 +77,14 @@ function FormRegister() {
             </div>
             <div className='contenedorDos'>  
               <h1>¡Bienvenido a BookApp!</h1>
-              <p>Create una cuenta con nosotros y disfruta de los beneficios y de la mejor pagina de intercambio de libros.</p>
+              <p className='parra'>Create una cuenta con nosotros y disfruta de los beneficios y de la mejor pagina de intercambio de libros.</p>
               <h3>Registrarse</h3>
               <input className='inpuesti' value={nombrePersonal} onChange={nombre} placeholder='Ingrese tu nombre' type="text" /><br /><br />
               <input className='inpuesti' value={apellidosUsuario} onChange={apellidos} placeholder='Ingrese tu apellido' type="text" /><br /><br />
               <input className='inpuesti' value={nomUsuario} onChange={usuario} placeholder='Ingrese un nombre de usuario' type="text" /><br /><br />
               <input className='inpuesti' value={correoUsu} onChange={correo} placeholder='Ingrese tu correo electronico' type="text" /><br /><br />
               <input className='inpuesti' value={passUsuario} onChange={password} placeholder='Ingrese una contraseña' type="password" /><br /><br />
-              <button onClick={valRegis} >Registrarse</button>
+              <button className='btnvalidar' onClick={valRegis} >Registrarse</button>
               <p>¿Ya tienes una cuenta? <Link to= "/login">¡Inicia sesión aquí!</Link> </p> 
             </div>
       </div>  
