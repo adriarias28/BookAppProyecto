@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import LlamadosUsuarios from '../Services/LlamadosUsuarios'
+import LlamadosUsuarios from '../../Services/LlamadosUsuarios'
 import Swal from 'sweetalert2'
-import imaglogin from '../imagenes/imaglogin.jpg'
-import "../Styles/register.css"
+import imaglogin from '../../imagenes/imaglogin.jpg'
+import "../../Components/RegistroLogin/register.css"
 
 
 function FormLogin() {
@@ -54,11 +54,9 @@ function FormLogin() {
             }, 
           });
       }else{ 
-        
           localStorage.setItem("infoUsuario", JSON.stringify(encontrar)) //stringify para convertido en formato lista
-          navigate('/pagusuarios')
-
-          Swal.fire("Bienvenido!");
+            navigate('/pagusuarios')
+            Swal.fire("Bienvenido!");
           }
     }
 

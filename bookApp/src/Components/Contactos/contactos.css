@@ -1,0 +1,111 @@
+/* Contenedor principal */
+.contenedorInfo {
+    text-align: center;
+    margin-top: 70px;
+    padding: 40px;
+    background-color: #f9f4f9; /* Fondo suave */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+    margin: 70px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Título principal */
+  .contac {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    color: #e87f91; /* Rosa suave */
+    margin-bottom: 20px;
+  }
+  
+  /* Párrafo introductorio */
+  .parrafoUno {
+    width: 80%;
+    margin: 20px auto;
+    font-size: 16px;
+    color: #000000; /* Morado suave */
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  /* Correo */
+  .correo {
+    color: #e87f91; /* Rosa suave */
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  /* Párrafo secundario */
+  .parrafoDos {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: #3489a5;
+    font-size: 18px;
+    margin: 10px auto;
+    width: 80%;
+    text-align: center;
+  }
+  
+  /* Contenedor de los inputs */
+  .contInputs {
+    margin-top: 30px;
+  }
+  
+  /* Estilo de los inputs de texto */
+  .inputUno {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #d0a7c6;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .inputUno:focus {
+    border-color: #e87f91; /* Rosa cuando está enfocado */
+    outline: none;
+  }
+  
+  /* Estilo del input de mensaje */
+  .inputDos {
+    width: 100%;
+    padding: 12px;
+    height: 120px;
+    margin-bottom: 25px;
+    border: 2px solid #d0a7c6;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .inputDos:focus {
+    border-color: #e87f91; /* Rosa cuando está enfocado */
+    outline: none;
+  }
+  
+  /* Estilo del botón */
+  .btnEnviar {
+    width: 100%;
+    padding: 14px;
+    background-color: #e87f91; /* Rosa suave */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+  }
+  
+  .btnEnviar:hover {
+    background-color: #d4707a; /* Rosa oscuro al pasar el mouse */
+  }

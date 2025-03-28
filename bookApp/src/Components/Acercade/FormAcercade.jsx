@@ -1,6 +1,7 @@
 import React from 'react'
-import "../Styles/acercade.css"
-import imgsobrenos from '../imagenes/leyendo.jpg'
+import "../../Components/Acercade/acercade.css"
+import imgsobrenos from '../../imagenes/leyendo.jpg'
+
 
 function FormAcercade() {
   return (

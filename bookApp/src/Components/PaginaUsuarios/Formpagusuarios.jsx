@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import logo from '../imagenes/logo.png'
-import tituloUno from '../imagenes/titulo1.png'
-import "../Styles/pagusuario.css"
+import logo from '../../imagenes/logo.png'
+import tituloUno from '../../imagenes/titulo1.png'
+import "../../Components/PaginaUsuarios/pagusuario.css"
 
 function Formpagusuarios() {
 
@@ -20,7 +20,6 @@ function Formpagusuarios() {
     }
 
 
-
   return (
     <div>
         <button className='btnSalir' onClick={btnSalir}>Salir</button>
@@ -28,7 +27,7 @@ function Formpagusuarios() {
             <div>
                 <img className='tituloUno' src={tituloUno} alt="..." />
             </div>
-            <p>Hola bienvenido{admis[0].nombre} {admis[0].apellidos}</p>
+            <p>Hola Bienvenido! {admis[0].nombre} {admis[0].apellidos}</p>
             <p className='parrafoUno'>Pagina web de intercambio de libros</p>
           </div><br />
 

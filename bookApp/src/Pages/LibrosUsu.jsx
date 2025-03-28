@@ -1,6 +1,6 @@
 import React from 'react'
-import FormLibros from '../Components/FormLibros'
-import Formpagusuarios from '../Components/Formpagusuarios'
+import FormLibros from '../Components/Libros/FormLibros'
+import Formpagusuarios from '../Components/PaginaUsuarios/Formpagusuarios'
 
 function LibrosUsu() {
   return (

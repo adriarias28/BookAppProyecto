@@ -1,5 +1,5 @@
-import FormNav from "../Components/FormNav"
-import FormPrincipal from "../Components/FormPrincipal"
+import FormNav from '../Components/NavBar/FormNav'
+import FormPrincipal from "../Components/PaginaPrincipal/FormPrincipal"
 
 
 function PagPrincipal() {

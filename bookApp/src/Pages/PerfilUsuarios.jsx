@@ -1,6 +1,6 @@
 import React from 'react'
-import FormPerfil from '../Components/FormPerfil'
-import Formpagusuarios from '../Components/Formpagusuarios'
+import FormPerfil from '../Components/PerfilUsuarios/FormPerfil'
+import Formpagusuarios from '../Components/PaginaUsuarios/Formpagusuarios'
 
 
 function PerfilUsuarios() {

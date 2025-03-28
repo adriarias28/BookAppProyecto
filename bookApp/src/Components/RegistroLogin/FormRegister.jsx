@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import LlamadosUsuarios from '../Services/LlamadosUsuarios';
+import LlamadosUsuarios from '../../Services/LlamadosUsuarios';
 import Swal from 'sweetalert2'
-import "../Styles/register.css"
-import imaglogin from '../imagenes/imaglogin.jpg' //import para la imagen 
+import "../../Components/RegistroLogin/register.css"
+import imaglogin from '../../imagenes/imaglogin.jpg' //import para la imagen 
 
 
 function FormRegister() {

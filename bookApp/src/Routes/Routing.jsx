@@ -10,6 +10,7 @@ import PerfilUsuarios from '../Pages/PerfilUsuarios';
 import ContactenosUsu from '../Pages/ContactenosUsu';
 import AcercadeUsu from '../Pages/AcercadeUsu';
 import LibrosUsu from '../Pages/LibrosUsu';
+import Fooder from '../Pages/Fooder';
 
 function Routing() {
 
@@ -29,6 +30,7 @@ function Routing() {
                     <Route path="/contactousu" element={<ContactenosUsu/>}/>
                     <Route path="/acercadeusu" element={<AcercadeUsu/>}/>
                     <Route path="/librosusu" element={<LibrosUsu/>}/>
+                    <Route path="/fooder" element={<Fooder/>}/>
 
         </Routes>
       </Router>

@@ -1,6 +1,6 @@
 import React from 'react'
-import FormContactos from '../Components/FormContactos'
-import Formpagusuarios from '../Components/Formpagusuarios'
+import FormContactos from '../Components/Contactos/FormContactos'
+import Formpagusuarios from '../Components/PaginaUsuarios/Formpagusuarios'
 
 
 function ContactenosUsu() {

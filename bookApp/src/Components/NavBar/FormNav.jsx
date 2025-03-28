@@ -1,8 +1,8 @@
 import React from 'react'
-import "../Styles/navbar.css"
-import logo from '../imagenes/logo.png'
+import "../../Components/NavBar/navbar.css"
+import logo from '../../imagenes/logo.png'
 import { Link, useNavigate } from 'react-router-dom'
-import tituloUno from '../imagenes/titulo1.png'
+import tituloUno from '../../imagenes/titulo1.png'
 
 
 function FormNav() {

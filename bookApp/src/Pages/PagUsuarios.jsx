@@ -1,5 +1,5 @@
 import React from 'react'
-import Formpagusuarios from '../Components/Formpagusuarios'
+import Formpagusuarios from '../Components/PaginaUsuarios/Formpagusuarios'
 
 
 function PagUsuarios() {

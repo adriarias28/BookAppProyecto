@@ -1,6 +1,6 @@
 import React from 'react'
-import FormAcercade from '../Components/FormAcercade'
-import Formpagusuarios from '../Components/Formpagusuarios'
+import FormAcercade from '../Components/Acercade/FormAcercade'
+import Formpagusuarios from '../Components/PaginaUsuarios/Formpagusuarios'
 
 function AcercadeUsu() {
   return (

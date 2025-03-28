@@ -1,5 +1,5 @@
 import React from 'react'
-import "../Styles/contactos.css"
+import "../../Components/Contactos/contactos.css"
 
 function FormContactos() {
   return (
@@ -18,7 +18,7 @@ function FormContactos() {
         <input className='inputUno' placeholder='Nombre' type="text" />
         <input className='inputUno' placeholder='Email ' type="text" /><br />
         <input className='inputDos' placeholder='Escribe tu mensaje aquí...' type="text" /><br />
-        <button>Enviar mensaje</button>
+        <button className='btnEnviar'>Enviar mensaje</button>
        </div>
 
       </div>

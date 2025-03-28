@@ -1,0 +1,190 @@
+.contLibros{
+    margin-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 2, 3);
+    margin-left: 20px;
+}
+
+.tituloLibro{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+.btnAgregar {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #d18598;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.btnAgregar:hover {
+    background-color: #c23f90;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+}
+
+.btnAgregar:active {
+    background-color: #daa3eb;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+
+
+ /*estilos del libro agregado  */
+.libro-card {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .libro-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .titulo-libro {
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .libro-agregado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .libro-imagen {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .libro-detalles {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .libro-info {
+    font-size: 1em;
+    color: #555;
+    margin: 8px 0;
+  }
+  
+  .libro-info strong {
+    color: #333;
+  }
+  
+  .btn-editar,
+  .btn-eliminar {
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-editar {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .btn-editar:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-eliminar {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .btn-eliminar:hover {
+    background-color: #e53935;
+  }
+
+  /*estilos para agregar el libro*/
+
+  .contLibros {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    background: #f4e1d280; /* Fondo color suave */
+  }
+   
+  .tituloLibro {
+    color: #e87f91; /* Rosa suave */
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4c5391; /* Morado suave */
+  }
+  
+  .inputCampo, .selectCampo {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d0a7c6;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .inputCampo:focus, .selectCampo:focus {
+    border-color: #e87f91;
+    outline: none;
+  }
+  
+  .inputArchivo {
+    margin-top: 10px;
+  }
+  
+  .btnAgregar {
+    width: 100%;
+    padding: 12px;
+    background-color: #e87f91; /* Rosa suave */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btnAgregar:hover {
+    background-color: #d4707a; /* Rosa oscuro al pasar el mouse */
+  }
+  
+  .imgPreview {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-top: 20px;
+  }

@@ -1,6 +1,6 @@
 import React from 'react'
-import FormAcercade from '../Components/FormAcercade'
-import FormNav from '../Components/FormNav'
+import FormAcercade from '../Components/Acercade/FormAcercade'
+import FormNav from '../Components/NavBar/FormNav'
 
 function Acercade() {
   return (

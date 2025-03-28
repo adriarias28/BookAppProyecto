@@ -1,5 +1,5 @@
 import React from 'react'
-import "../Styles/pagprincipal.css"
+import "../../Components/PaginaPrincipal/pagprincipal.css"
 
 
 function FormPrincipal() {

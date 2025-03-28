@@ -19,17 +19,39 @@ async function getLibros() {
     }
 }
 
+async function getLibro(id) {
+    try {
+        const response = await fetch('http://localhost:3001/libros/'+id, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error('Error fetching users');
+        }
+
+        const users = await response.json();
+        return users;
+    } catch (error) {
+        console.error('Error fetching users:', error);
+        throw error;
+    }
+}
+
 
 //////////LLAMADO POST//////////
 
-async function postLibros(libro,autor,editorial,genero) {
+async function postLibros(libro,autor,editorial,genero, imagen) {
     try {
      
         const userData = { 
             libro,
             autor,
             editorial, 
-            genero
+            genero,
+            imagen
 
         };
 
@@ -67,8 +89,8 @@ async function updateLibros(libro,autor,editorial, id)
         };
 
 
-        const response = await fetch("http://localhost:3001/libros"+id, {
-            method: 'PUT',
+        const response = await fetch("http://localhost:3001/libros/"+id, {
+            method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -107,4 +129,4 @@ async function deleteLibros(id) {
     }
 }
 
-export default { deleteLibros, postLibros, updateLibros, getLibros }
+export default { deleteLibros, postLibros, updateLibros, getLibros, getLibro }

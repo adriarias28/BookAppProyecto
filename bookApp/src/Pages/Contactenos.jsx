@@ -1,6 +1,6 @@
 import React from 'react'
-import FormContactos from '../Components/FormContactos'
-import FormNav from '../Components/FormNav'
+import FormContactos from '../Components/Contactos/FormContactos'
+import FormNav from '../Components/NavBar/FormNav'
 
 
 function Contactenos() {
