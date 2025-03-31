@@ -14,7 +14,6 @@ const [generoLiterario, setgenerolite]=useState("Ciencia ficción") //valor pred
 const [imgs,setImag]=useState()
 const [libros,SetLibros]=useState([])
 const [edita,Seteditado]=useState()
-const [usuarioLibro,SetUsuariosLibro]=useState()
 
 
 useEffect(() => { //utilizamos un UseEffect para que el ciclo no sea infinito
@@ -22,12 +21,16 @@ useEffect(() => { //utilizamos un UseEffect para que el ciclo no sea infinito
   async function fetchDataUsers() { //me trae los libros que guardo en la dbjson
       
       const datos = await LlamadosLibros.getLibros()
-      const librosUsuarios = 
-
-      SetLibros(datos)
+      const usuario = JSON.parse(localStorage.getItem("infoUsuario"))
+      const librosFiltrados = datos.filter((libro) => libro.usuario === usuario[0].id)
+      
+      
+      SetLibros(librosFiltrados)
   };
   fetchDataUsers()
-})
+},[])
+
+
 
 const contImagenes=(e)=>{  // funcionamiento de base 64
   const data = new FileReader()
@@ -81,7 +84,10 @@ async function btnLibro() {
             });
           
   } else {
-   const datoLibro = await LlamadosLibros.postLibros(nomLibro, nomAutor, nomEditorial, generoLiterario, imgs) 
+
+    const usuario = JSON.parse(localStorage.getItem("infoUsuario"))
+
+   const datoLibro = await LlamadosLibros.postLibros(usuario[0].id, nomLibro, nomAutor, nomEditorial, generoLiterario, imgs) 
       SetLibros([...libros,datoLibro])
           Swal.fire({
               title: "Tu libro a sido agregado correctamente",
@@ -109,13 +115,11 @@ async function botonEliminar(id) {
 
   if (result.isConfirmed) {
     try {
-      // Delete the book
+ 
       await LlamadosLibros.deleteLibros(id);
 
-      // Fetch updated list of books
       const data = await LlamadosLibros.getLibros();
       SetLibros(data);
-            // Show success message
             Swal.fire({
               title: "Eliminado",
               text: "El libro fue eliminado correctamente",
@@ -124,7 +128,7 @@ async function botonEliminar(id) {
           } catch (error) {
             console.error("Error eliminando el libro:", error);
       
-            // Show error message
+            // Mensaje de error
             Swal.fire({
               title: "Error",
               text: "Hubo un problema al eliminar el libro.",
@@ -187,7 +191,7 @@ async function btnEditar(id) {
           <option value="Terror">Terror</option>
           <option value="Novela">Novela</option>
           <option value="Autoyuda y espiritualidad">Autoyuda y espiritualidad</option>
-          <option value="Gastronomía"></option>
+          <option value="Biografía">Biografía</option>
         </select><br /><br />
 
         <input className="inputArchivo" type="file" onChange={contImagenes} /><br /><br />

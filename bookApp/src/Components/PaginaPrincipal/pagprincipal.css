@@ -1,4 +1,85 @@
-.titulo{
+/* Estilos Globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Estilos del Título */
+  .tituloInicio{
     text-align: center;
+    font-size: 2.5rem;
+    font-weight: 550;
+    color: #6c4f86;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+    margin-top: 30px;
+  }
+  
 
-}
+  /* Contenedor de los Libros con Grid */
+  .contenedorInicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Grid responsivo */
+    gap: 2rem; /* Espacio entre los elementos */
+    justify-items: center; /* Centra los elementos en cada celda */
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Estilo para las imágenes */
+  .imgjuegos, .imgmujercitas {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .imgjuegos:hover, .imgmujercitas:hover {
+    transform: scale(1.05); 
+  }
+  
+  /* Títulos de los libros */
+  .libro-titulo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #6c757d;
+    margin-top: 1rem;
+  }
+  
+  /* Colores y fondo */
+  body {
+    background-color: #f0f4f8; 
+  }
+  
+  .contenedorInicio {
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .titulo {
+    color: #6d4c41;
+  }
+  
+  .parrafosinicio {
+    color: #9068b4;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-size: 25px;
+  }
+
+  .parrafoIni{
+    font-size: 15px;
+    color: #a8497d;
+  }

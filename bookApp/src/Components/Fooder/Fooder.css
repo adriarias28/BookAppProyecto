@@ -1,0 +1,65 @@
+/* Estilos generales del footer */
+footer {
+  background-color: #e1d6f1; 
+  color: #6c4f86; 
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top: 2px solid #dcd6e3; 
+}
+
+/* Contenido del footer */
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 140px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer-links ul, .footer-social ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-links ul li, .footer-social ul li {
+  margin: 12px 0;
+}
+
+.footer-social{
+  text-align: center;
+}
+
+.footer-links ul li a, .footer-social ul li a {
+  color: #6c4f86;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover, .footer-social ul li a:hover {
+  color: #c76497; /* Rosa pastel suave al pasar el mouse */
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #f4f1f9; 
+  color: #6c4f86;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Agregar hover sobre los enlaces */
+footer a:hover {
+  color: #c76497;
+}

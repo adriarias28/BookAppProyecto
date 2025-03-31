@@ -11,6 +11,8 @@ import ContactenosUsu from '../Pages/ContactenosUsu';
 import AcercadeUsu from '../Pages/AcercadeUsu';
 import LibrosUsu from '../Pages/LibrosUsu';
 import Fooder from '../Pages/Fooder';
+import IniciopagUsuarios from '../Pages/IniciopagUsuarios';
+import PrivateRoute from '../Components/RutasPrivadas/PrivateRoute';
 
 function Routing() {
 
@@ -26,11 +28,12 @@ function Routing() {
                     <Route path="/acercade" element={<Acercade/>}/>
                     <Route path="/libros" element={<Libros/>}/>
                     <Route path="/pagusuarios" element={<PagUsuarios/>}/>
-                    <Route path="/perfilusu" element={<PerfilUsuarios/>}/>
-                    <Route path="/contactousu" element={<ContactenosUsu/>}/>
-                    <Route path="/acercadeusu" element={<AcercadeUsu/>}/>
-                    <Route path="/librosusu" element={<LibrosUsu/>}/>
+                    <Route path="/perfilusu" element={<PrivateRoute element={<PerfilUsuarios />} />} />
+                    <Route path="/contactousu" element={<PrivateRoute element={<ContactenosUsu />} />} />
+                    <Route path="/acercadeusu" element={<PrivateRoute element={<AcercadeUsu />} />} />
+                    <Route path="/librosusu" element={<PrivateRoute element={<LibrosUsu />} />} />
                     <Route path="/fooder" element={<Fooder/>}/>
+                    <Route path="/iniciousu" element={<PrivateRoute element={<IniciopagUsuarios />} />} />
 
         </Routes>
       </Router>

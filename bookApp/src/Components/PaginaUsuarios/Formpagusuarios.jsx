@@ -21,22 +21,20 @@ function Formpagusuarios() {
 
 
   return (
-    <div>
+    <div><br />
         <button className='btnSalir' onClick={btnSalir}>Salir</button>
           <div className='titulos'>
             <div>
                 <img className='tituloUno' src={tituloUno} alt="..." />
             </div>
-            <p>Hola Bienvenido! {admis[0].nombre} {admis[0].apellidos}</p>
-            <p className='parrafoUno'>Pagina web de intercambio de libros</p>
-          </div><br />
-
-          <nav className='navbar'>
+            <p className='localsto'>Hola Bienvenido! {admis[0].nombre} {admis[0].apellidos}</p>
+          </div>
+        <nav className='navbar'>
               <div>
               <img className='imglogo' src={logo} alt="..." />
               </div>
               <div>    
-              <li><Link to= "/pagusuarios">Inicio</Link> </li>
+              <li><Link to= "/iniciousu">Inicio</Link> </li>
               </div>
               <div> 
               <li> <Link to= "/librosusu">Libros</Link></li>
@@ -50,7 +48,7 @@ function Formpagusuarios() {
               <div>
               <li> <Link to= "/acercadeusu">Acerca de</Link></li>
               </div>
-          </nav> 
+        </nav> 
 
     </div>
   )

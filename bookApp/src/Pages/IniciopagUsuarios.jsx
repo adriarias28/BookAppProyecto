@@ -1,18 +1,18 @@
-import React from 'react'
-import FormLibros from '../Components/Libros/FormLibros'
 import Formpagusuarios from '../Components/PaginaUsuarios/Formpagusuarios'
+import InicioUsuarios from '../Components/InicioUsuarios.jsx/InicioUsuarios'
 import FormFooder from '../Components/Fooder/FormFooder'
 
-function LibrosUsu() {
+function IniciopagUsuarios() {
   return (
     <div>
 
     <Formpagusuarios/>
-    <FormLibros/>
+    <InicioUsuarios/>
     <FormFooder/>
-    
+
+
     </div>
   )
 }
 
-export default LibrosUsu
+export default IniciopagUsuarios

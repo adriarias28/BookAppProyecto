@@ -22,7 +22,7 @@ function FormNav() {
     }
 
   return (
-    <div>
+    <div><br />
         <button className='btnInicio' onClick={btnInicio}>Iniciar Sesión</button> 
         <button className='btnRegis' onClick={btnRegis}>Registrarse</button>
 
@@ -30,7 +30,6 @@ function FormNav() {
             <div>
                 <img className='tituloUno' src={tituloUno} alt="..." />
             </div>
-            <p className='parrafoUno'>Pagina web de intercambio de libros</p><br />
         </div>   
 
         <nav className='navbar'>

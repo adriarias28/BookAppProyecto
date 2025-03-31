@@ -1,5 +1,6 @@
 import React from 'react'
 import Formpagusuarios from '../Components/PaginaUsuarios/Formpagusuarios'
+import FormFooder from '../Components/Fooder/FormFooder'
 
 
 function PagUsuarios() {
@@ -7,6 +8,7 @@ function PagUsuarios() {
     <div>
 
     <Formpagusuarios/>
+    <FormFooder/>
     
 
     </div>

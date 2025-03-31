@@ -1,31 +1,47 @@
-import React from 'react'
-import {Card, Button, Container, Row} from 'react-bootstrap';
+import React, { useEffect, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import leyendo from '../../imagenes/leyendo.jpg'
 import "../../Components/Libros/libros.css"
+import LlamadosLibros from '../../Services/LlamadosLibros';
+
 
 function FormLibros() {
+
+  const [libros, SetLibros]= useState([])
+
+  useEffect(() => {
+    async function fetchDataUsers() {
+      const dataLibro = await LlamadosLibros.getLibros();
+      SetLibros(dataLibro);
+
+    }
+
+    fetchDataUsers()
+
+  },[]);
+
+
+
+
+
   return (
     <div>
 
         <h2 className='tituloLibros'>Libros disponibles de intercambio</h2>
-
-        <Container>
-    <Row>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={leyendo} />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-    </Row>
-    </Container>
-
+        
+     <div className='librosContenedor'> 
+      {libros.map((libroagregado, index) => ( 
+          <div key={index} className="libroCard"><br />
+        <div className='libroAgregado'>
+          <img src={libroagregado.imagen} height='300px' width='200px' className="libroImagen"/>
+          <p className="libroInfo"><strong>Título: </strong>{libroagregado.libro}</p>
+            <p className="libroInfo"><strong>Autor: </strong>{libroagregado.autor}</p>
+            <p className="libroInfo"><strong>Editorial: </strong>{libroagregado.editorial}</p>
+            <p className="libroInfo"><strong>Genero: </strong>{libroagregado.genero}</p><br />
+            <button className='btnCambiar'>Intercambiar Libro</button>
+        </div>
+              </div>
+        ))}
+    </div>
 
 
     </div>

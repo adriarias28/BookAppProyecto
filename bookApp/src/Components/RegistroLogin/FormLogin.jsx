@@ -41,10 +41,12 @@ function FormLogin() {
     function valInicio() {
       
       const encontrar = personas.filter(persona => persona.usuario === nomUsuario && persona.password===passUsuario)
-      console.log(encontrar);
       
 
       if (encontrar.length === 0 || nomUsuario === "" || passUsuario === "" ) {
+                  
+
+
           Swal.fire({
             icon: "error",
             title: "Llenar campos vacios",
@@ -54,8 +56,11 @@ function FormLogin() {
             }, 
           });
       }else{ 
+          localStorage.setItem("token", "usuario-autenticado"); //rutaprivada
+
           localStorage.setItem("infoUsuario", JSON.stringify(encontrar)) //stringify para convertido en formato lista
-            navigate('/pagusuarios')
+
+          navigate('/iniciousu')
             Swal.fire("Bienvenido!");
           }
     }
@@ -64,7 +69,7 @@ function FormLogin() {
     <div>
       <div className='contenedorPrincipal'>
             <div>
-              <img className='imglogin' src={imaglogin} alt="..." />
+              <img className='imglogin' src={imaglogin} alt="..." height='100px' />
             </div>
             <div className='contInfo'>
               <h1>¡Bienvenido a BookApp!</h1>

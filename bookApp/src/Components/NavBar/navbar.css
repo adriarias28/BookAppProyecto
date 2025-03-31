@@ -16,7 +16,6 @@ li{
 }
 
 .navbar{
-    background-color: rgb(202, 238, 238);
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
     height: 110px;
@@ -27,7 +26,7 @@ li{
 }
 
 nav :hover{
-    color: #f1c6dc;
+    color: #c76497;
 }
 
 .imglogo{
@@ -41,57 +40,53 @@ a {
 } 
 
 .btnInicio {
-  padding: 12.5px 30px;
-  border: 0;
-  border-radius: 100px;
-  background-color: #2ba8fb;
-  color: #ffffff;
-  font-weight: Bold;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  margin-left: 520px;
+  background-color: #6c4f86;  /* Color principal del botón */
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
 }
 
 .btnInicio:hover {
-  background-color: #6fc5ff;
-  box-shadow: 0 0 20px #6fc5ff50;
-  transform: scale(1.1);
+  background-color: #c76497; 
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btnInicio:active {
-  background-color: #3d94cf;
-  transition: all 0.25s;
-  -webkit-transition: all 0.25s;
+  transform: translateY(1px); /* Efecto de presionar el botón */
   box-shadow: none;
-  transform: scale(0.98);
 }
 
 .btnRegis {
-  padding: 12.5px 30px;
-  border: 0;
-  border-radius: 100px;
-  background-color: #2ba8fb;
-  color: #ffffff;
-  font-weight: Bold;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  margin-right: 500px;
+  background-color: #6c4f86;  /* Color principal del botón */
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
 }
 
 .btnRegis:hover {
-  background-color: #6fc5ff;
-  box-shadow: 0 0 20px #6fc5ff50;
-  transform: scale(1.1);
+  background-color: #c76497; 
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btnRegis:active {
-  background-color: #3d94cf;
-  transition: all 0.25s;
-  -webkit-transition: all 0.25s;
+  transform: translateY(1px); /* Efecto de presionar el botón */
   box-shadow: none;
-  transform: scale(0.98);
 }
 
 .parrafoUno {
-  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

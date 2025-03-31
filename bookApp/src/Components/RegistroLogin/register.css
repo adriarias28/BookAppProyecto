@@ -1,64 +1,98 @@
-
-.contenedorAlert { 
-    background-color: rgb(204, 211, 165);
-    border-radius: 100px;
+/* Contenedor de la alerta */
+.contenedorAlert {
+  background-color: #ffffff;  
+  border-radius: 30px;         
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+  text-align: center;
 }
 
-.title{
-    color: rgb(211, 173, 173);
+.title {
+  color: #9d7abd;  /* Un tono suave de lavanda */
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
-.contenedorPrincipal{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    gap: 5px;
+/* Contenedor principal */
+.contenedorPrincipal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.parra{
-  width: 600px;
+.parra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
 }
 
-.imglogin{
-    margin-left: 80px;
-    width: 500px;
-    height: 500px;
-    border-radius: 10px;
-    margin-top: 50px;
+/* Imagen de login */
+.imglogin {
+  width: 100%;
+  max-width: 550px;  
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+/* Estilo de los inputs */
 .inpuesti {
-    width: 250px;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
-    outline: none;
-    color: rgb(41, 51, 112);
-  }
+  width: 100%;
+  max-width: 300px; /* Limitar el ancho */
+  padding: 12px;
+  border: 2px solid #d1c4e9; /* Color de borde suave */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+  color: #333;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
 
+.inpuesti:focus {
+  border-color: #6c4f86;  /* Lavanda suave al enfocar */
+}
+
+/* Botón de validación */
 .btnvalidar {
-    --bg: #153253;
-    --hover-bg: #9290ff9f;
-    --hover-text: #000;
-    color: #fff;
-    cursor: pointer;
-    border: 1px solid var(--bg);
-    border-radius: 4px;
-    padding: 0.8em 2em;
-    background: var(--bg);
-    transition: 0.2s;
-  }
-  
-  .btnvalidar:hover {
-    color: var(--hover-text);
-    transform: translate(-0.25rem, -0.25rem);
-    background: var(--hover-bg);
-    box-shadow: 0.25rem 0.25rem var(--bg);
-  }
-  
-  .btnvalidar:active {
-    transform: translate(0);
-    box-shadow: none;
-  }
-  
+  background-color: #6c4f86;  /* Color principal del botón */
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btnvalidar:hover {
+  background-color: #c76497; 
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btnvalidar:active {
+  transform: translateY(1px); /* Efecto de presionar el botón */
+  box-shadow: none;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #6c4f86;
+}
+

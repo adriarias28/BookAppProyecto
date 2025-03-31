@@ -43,10 +43,11 @@ async function getLibro(id) {
 
 //////////LLAMADO POST//////////
 
-async function postLibros(libro,autor,editorial,genero, imagen) {
+async function postLibros(usuario, libro,autor,editorial,genero, imagen) {
     try {
      
         const userData = { 
+            usuario,
             libro,
             autor,
             editorial, 
